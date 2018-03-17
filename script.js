@@ -104,3 +104,13 @@ function normalImg(x) {
     x.style.height = "100px";
     x.style.width = "100px";
 }
+
+
+function maakZin() {
+    var gegevens = document.getElementsByClassName("invoer");
+	  var uitvoer = document.getElementsByClassName("uitvoer");
+
+    for (var i = 0; i < gegevens.length ;i++) {
+        uitvoer[i].innerHTML = gegevens[i].value.toString();
+	}
+}
